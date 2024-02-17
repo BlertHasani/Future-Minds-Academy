@@ -1,11 +1,11 @@
-body{
-background-color: rgb(17, 15, 15);
-color: beige;
+body {
+    background-color: rgb(17, 15, 15);
+    color: beige;
 
 }
 
-h1{
-background-color: beige;
+h1 {
+    background-color: beige;
     color: black;
     font-size: 20px;
     padding: 20px;
@@ -15,21 +15,21 @@ background-color: beige;
 
 }
 
-h2{
-background-color: blueviolet;
-color: white;
-padding:20px;
+h2 {
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
 
 
 }
 
 
-p{
+p {
     background-color: rgb(97, 97, 97);
-color: rgb(241, 86, 86);
-font-style: italic;  
-font-family: Verdana, Geneva, Tahoma, sans-serif; 
-width: 800px;
+    color: rgb(241, 86, 86);
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 800px;
 
 
 }
