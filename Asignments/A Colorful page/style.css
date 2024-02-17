@@ -1,0 +1,27 @@
+body {
+    background-image: url(images/sidebar-1.jpg);
+
+}
+
+h1 {
+
+    background: linear-gradient(90deg, rgb(17, 17, 17) 0%, rgb(80, 80, 83) 80%, rgb(210, 215, 216) 100%);
+    color: beige;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 10px;
+
+}
+
+li a {
+    color: rgb(0, 0, 0);
+    font-style: none;
+}
+
+section {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 12%, rgb(121, 121, 121) 37%, rgb(204, 204, 204)95%);
+    color: beige;
+
+}
