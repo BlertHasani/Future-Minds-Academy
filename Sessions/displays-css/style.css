@@ -1,0 +1,42 @@
+
+
+
+nav a{
+
+margin-bottom: 20px;
+padding:40px;
+display: block;
+border: 1px solid red;
+}
+
+
+nav{
+height: 100vh;
+width: 400px;
+padding-top: 100px;
+background-color: lightblue;
+
+}
+
+.myProduct {
+    
+    
+ background-color: azure;
+
+}
+
+.myFolio {
+    padding: 40px;
+border: 1px solid red;
+
+
+
+}
+
+.myReach{
+    padding: 40px;
+border: 1px solid red;
+
+
+
+}

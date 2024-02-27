@@ -1,0 +1,255 @@
+body{
+
+background-image: url(images/background.jpg);
+background-size: cover;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+cursor: url(images/5bbc0a64358e5.jpg),auto;
+}
+
+
+nav li {
+float:center;
+display: inline;
+background-color: lightblue;
+border-radius: 10px;
+padding: 15px;
+margin: 20px;
+}
+
+
+
+li a{
+    text-decoration: none ;
+color: white;
+}
+
+nav li:hover{
+
+background-color: darkblue;
+}
+
+hr{
+
+border-color: black;
+width: 73%;
+}
+
+.section1{
+
+    background-color:rgb(216, 227, 20);
+border-radius: 40px;
+margin: 150px;
+padding: 15px;
+}
+
+.section1:hover{
+
+    border: 3px solid black;
+background-color: rgb(190, 199, 26);
+margin: 150px;
+padding: 15px;
+}
+
+.section2{
+
+background-color:rgb(240, 55, 38);      
+
+border-radius: 40px;
+padding: 20px;
+margin: 150px;
+text-decoration: none;
+
+
+}
+
+.section2:hover{
+
+background-color:rgb(184, 22, 7) ;
+border: 3px solid black;
+}
+
+
+.education{
+
+margin-top: 0px;
+padding: 0px;
+padding-bottom: 50px;
+}
+
+
+
+.educationPrimary{
+    color: grey;
+  font-size: 30px;
+  text-align: left;
+  list-style: none;
+  padding: 30px;
+  margin: 10px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 40px;
+  
+}
+
+
+
+
+.nestedList{
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    list-style: none;
+    padding: 15px;
+    margin: 5px;
+    
+  
+
+
+}
+
+
+
+.highSchool{
+
+    color: grey;
+    font-size: 30px;
+    text-align: left;
+    list-style: none;
+    padding: 30px;
+    margin: 10px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 40px;
+
+
+}
+
+
+.highSchoolList{
+
+
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    list-style: none;
+    padding: 15px;
+    margin: 5px;
+    
+
+
+
+
+
+}
+
+
+
+
+
+.tableSection{
+
+background-color: rgb(92, 227, 14);
+
+border-radius: 40px;
+margin: 150px;
+padding: 25px;
+}
+
+.tableSection:hover{
+background-color: lightgreen;
+border: 3px solid black;
+margin: 150px;
+padding: 25px;
+}
+
+.table{
+    table-layout: auto;
+    margin: 40px;
+    padding: 0px;
+    width: 70%;
+    height: 100px;
+    border: 1px solid black;
+border-collapse: collapse;
+
+}
+    
+
+
+table{
+table-layout: auto ;
+
+
+}
+
+
+
+th{
+background-color: rgb(0, 255, 0);
+
+}
+
+td{
+
+text-decoration: underline;
+
+
+}
+
+
+
+
+
+.section4{
+text-align: left;
+background-color: pink;
+padding: 20px;
+margin: 150px;
+
+border-radius: 40px;
+
+
+}
+.section4:hover{
+
+border: 3px solid black;
+
+}
+
+.center{
+text-align: center;
+padding: 0px;
+margin: 0px;
+}
+
+
+ol li{
+padding: 10px 0px;
+margin: 10px;
+
+}
+
+ol li a{
+
+background-color: darkorange;
+color: white;
+border-radius: 5px;
+padding: 5px 5px 9px 6px;
+
+}
+
+
+footer{
+
+background-color: rgb(36, 36, 36);
+color: white;
+font-size: 20px;
+margin: 0px 150px;
+padding:40px;
+margin-bottom: 0px;
+}
+
+
+/*All my hover styles*/
+
+
