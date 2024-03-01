@@ -1,19 +1,25 @@
+*{
+
+ cursor: url(images/arrow-cursor.png), auto;
+
+}
+
 body {
 
     background-image: url(images/background.jpg);
-    background-size: cover;
+    background-size:cover;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    cursor: url(images/cursor.png) auto;
 }
 
-nav li {
+nav li{
     float: center;
     display: inline;
     background-color: lightblue;
     border-radius: 10px;
     padding: 15px;
-    margin: 20px;
+    margin: 15px;
+   
 }
 
 
@@ -35,7 +41,7 @@ hr {
     background-color: rgb(216, 227, 20);
     border-radius: 40px;
     margin: 150px;
-    padding: 15px;
+    padding: 25px;
 }
 
 
@@ -189,8 +195,7 @@ ol li {
 }
 
 ol li a {
-
-    background-color: darkorange;
+    background-color: orange;
     color: white;
     border-radius: 5px;
     padding: 5px 5px 9px 6px;
@@ -205,7 +210,7 @@ footer {
     font-size: 20px;
     margin: 0px 150px;
     padding: 40px;
-    margin-bottom: 0px;
+    margin-bottom: -100px;
 }
 
 
@@ -250,5 +255,11 @@ nav li:hover {
 .section4:hover {
 
     border: 3px solid black;
+
+}
+
+.section4  a:hover{
+background-color:darkorange ;
+
 
 }

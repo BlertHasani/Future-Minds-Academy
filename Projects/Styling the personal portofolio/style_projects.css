@@ -1,0 +1,137 @@
+*{
+    cursor: url(images/746316_rocket_racket_satellite_socket_space_icon.png), auto;
+    
+    
+    }
+
+    body {
+
+        background-image: url(images/projects_page_background.jpg);
+        background-size:cover;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+header h1{
+background-color: rgb(174, 255, 216);
+margin: 40px 150px;
+padding: 40px;
+border-radius: 40px;
+
+}
+
+
+    nav li{
+        float: center;
+        display: inline;
+        background-color: rgb(255, 183, 195);
+        color: midnightblue;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 15px;
+    }
+
+
+    hr{
+border-color: rgb(225, 188, 41);
+    }
+
+li a{
+
+    text-decoration: none;
+}
+
+
+
+#p1{
+    background-color: rgb(106, 93, 123);
+    border-radius: 40px;
+    margin: 150px;
+    padding: 15px;
+    font-size: 24px;
+}
+
+#p2{
+
+    background-color: rgb(117, 159, 188);
+    font-size: 24px;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 150px;
+    text-decoration: none;
+
+
+}
+
+
+#p3{
+
+
+background-color: rgb(21, 50, 67);
+    color: grey;
+    font-size: 24px;
+    list-style: none;
+    padding: 30px;
+    margin: 150px;
+    border: 3px solid black;
+    border-radius: 40px;
+
+
+}
+
+
+
+footer{
+
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-size: 20px;
+    margin: 0px 150px;
+    padding: 40px;
+    margin-bottom: -100px;
+
+}
+
+img{
+
+border-radius: 40px;
+width: 50%;
+
+}
+
+    /*All my hover styles */
+
+
+    nav li:hover{
+
+border: 3px;
+background-color: rgb(255, 109, 134);
+
+
+    }
+
+
+
+    #p1:hover{
+
+background-color:rgb(70, 54, 90) ;
+border: 3px solid black;
+
+    }
+
+    #p2:hover{
+        
+
+        background-color: rgb(68, 106, 133) ;
+        border: 3px solid black;
+
+
+    }
+
+    #p3:hover{
+
+
+        background-color:rgb(3, 28, 43);
+        border: 3px solid black;
+
+    }
