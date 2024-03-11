@@ -1,0 +1,19 @@
+body{
+display: flex;
+justify-content: space-between;
+width: 400px;
+height: 300px;
+}
+
+/* global */
+
+.BgBlue{
+background-color: blue;
+
+}
+
+.pd40{
+
+padding: 40px;
+
+}

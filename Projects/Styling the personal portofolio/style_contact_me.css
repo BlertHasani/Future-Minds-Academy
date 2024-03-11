@@ -1,5 +1,5 @@
-*{
-cursor: url(images/4202011_email_gmail_mail_logo_social_icon.png), auto;
+* {
+    cursor: url(images/4202011_email_gmail_mail_logo_social_icon.png), auto;
 
 
 }
@@ -9,29 +9,29 @@ cursor: url(images/4202011_email_gmail_mail_logo_social_icon.png), auto;
 body {
 
     background-image: url(images/vienna.jpg);
-    background-size:cover;
+    background-size: cover;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 100px;
 }
 
-header h1{
+header h1 {
 
-background-color:azure;
-font-size: 50px;
-border-radius: 40px;
-margin-top: -30px;
-margin-bottom: 50px;
+    background-color: azure;
+    font-size: 50px;
+    border-radius: 40px;
+    margin-top: -30px;
+    margin-bottom: 50px;
 }
 
-nav li{
+nav li {
     float: center;
     display: inline;
     background-color: rgb(195, 181, 159);
     border-radius: 10px;
     padding: 15px;
     margin: 15px;
-   
+
 }
 
 
@@ -40,7 +40,7 @@ li a {
     color: white;
 }
 
-.theForm{
+.theForm {
     background-color: rgb(38, 70, 83);
     border-radius: 40px;
     margin: 150px;
@@ -48,31 +48,69 @@ li a {
 
 }
 
-form{
-background-color: rgb(75, 163, 195);
-border-radius: 40px;
+form {
+    background-color: rgb(75, 163, 195);
+    border-radius: 40px;
     margin: 150px;
     padding: 25px;
+    transition: 1s;
+
+}
+
+
+.TheEmail {
+float: center;
+    background-color: rgb(36, 36, 36);
+    border: 1px solid black;
+    border-radius: 40px;
+    margin: 0px 130px;
+    margin-left: 0px;
+    padding: 15px;
+}
+
+.theComment {
+
+float: center;
+
+    background-color: rgb(36, 36, 36);
+    border: 1px solid black;
+    border-radius: 40px;
+    margin: 10px;
     
-transition: 1s;
+    padding: 15px;
+
+
+
+}
+
+.theButton{
+
+
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin: 0px 130px;
+    padding: 15px;
+
 
 }
 
 
-.media{
+.media {
 
-background-color: rgb(3, 25, 39);
-padding: 20px;
-margin: 150px;
-border-radius: 40px;
-transition: 2s;
+    background-color: rgb(3, 25, 39);
+    padding: 20px;
+    margin: 150px;
+    border-radius: 40px;
+    transition: 2s;
 }
 
-img{
+img {
 
-width: 30%;
-height: 30%;
-transition: 0.5s;
+    width: 30%;
+    height: 30%;
+    transition: 0.5s;
 }
 
 
@@ -81,21 +119,35 @@ footer {
     background-color: rgb(36, 36, 36);
     color: white;
     font-size: 20px;
-    margin-top:200px;
+    margin-top: 200px;
     padding: 40px;
     margin-bottom: -100px;
+
 }
+
+
+
+
+
+
 
 
 /*All my hover styles are below */
 
-nav li:hover{
 
-background-color: rgb(119, 105, 82);
+
+
+
+
+
+
+nav li:hover {
+
+    background-color: rgb(119, 105, 82);
 }
 
 
-.theForm:hover{
+.theForm:hover {
 
 
     border: 3px solid black;
@@ -107,16 +159,16 @@ background-color: rgb(119, 105, 82);
 
 
 
-form:hover{
-margin: 150px;
-padding: 25px;
-transition: 1s;
-background-color: rgb(3, 25, 39);
+form:hover {
+    margin: 150px;
+    padding: 25px;
+    transition: 1s;
+    background-color: rgb(3, 25, 39);
 }
 
 
 
-.media:hover{
+.media:hover {
 
 
 
@@ -125,16 +177,16 @@ background-color: rgb(3, 25, 39);
     margin: 150px;
     padding: 15px;
     border: 3px solid black;
-transition: 1s;
+    transition: 1s;
 
 
 }
 
 
-img:hover{
-transition: 1.2s;
-width: 37%;
-height: 37%;
+img:hover {
+    transition: 1.2s;
+    width: 37%;
+    height: 37%;
 
 
 }
