@@ -1,0 +1,75 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+grid-template-rows: 100px 1fr 100px;
+height: 100vh;
+}
+
+.dGrid{
+display: grid;
+}
+
+header{
+background-color: red;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+ul li{
+text-decoration: none;
+list-style: none;
+
+}
+
+aside{
+    background-color: violet;
+padding: 100px;
+
+}
+.container{
+background-color: blue;
+grid-template-columns: auto 1fr;
+
+}
+
+main{
+ background-color: green;
+grid-template-rows: 1fr 1fr;
+gap: 10px;
+}
+
+.section1{
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+
+}
+.section2{
+background-color: grey;
+
+}
+article{
+    background-color: brown;
+}
+.fixedpos{
+position: fixed;
+bottom: 10px;
+right: 10px;
+}
+
+footer{
+    background-color: aqua;
+}
+
+
+ /* hover css */
+
+
+main section:hover{
+background-color: transparent;
+}

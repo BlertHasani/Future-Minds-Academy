@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 100vh;
+}
+
+header {
+    background-color: blueviolet;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+
+aside {
+    background-color: plum;
+}
+
+main {
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section {
+    background-color: midnightblue;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+footer {
+
+    background-color: blue;
+}
+
+.pd10-mrg10 {
+
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}

@@ -1,0 +1,37 @@
+.all-cards{
+  display: flex;
+    gap:10px;
+}
+
+.all-cards> div{
+    width: 300px;
+}
+
+
+.all-cards img{
+    width: 300px;
+    height:100px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width:800px) {
+
+body{background-color:aquamarine;}
+
+.all-cards div{
+    width: 100%;
+    flex: 1;
+}
+
+.all-cards img{
+    width: 100vw;
+    height:100px;
+    object-fit: cover;
+}
+
+.all-cards{
+    
+    flex-direction: column;
+}
+
+}

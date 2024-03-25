@@ -1,0 +1,50 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    height: 100vh;
+    
+}
+
+header{
+background-color: red;
+
+}
+
+div{
+
+display: grid;
+grid-template-columns: 100px 1fr 100px;
+
+}
+
+aside{
+    background-color: green;
+
+}
+
+main{
+    background-color: pink;
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+footer{
+
+    background-color: black;
+    color: white;
+}
+
+section{
+background-color: grey;
+border: 1px solid black;
+border-radius: 40px;
+margin: 10px;
+
+}
