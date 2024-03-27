@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: space-between;
+    gap: 100px;
+}
+
+div {
+    justify-content: space-between;
+    gap: 30px;
+    height: 10vh;
+    width: 15vw;
+    gap: 0;
+}
+
+.nested-div {
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+}
+
+img {
+    width: 15vw;
+    height: 40vh;
+}
+
+/* Global */
+.GbFlex {
+    display: flex;
+    align-items: center;
+}
+
+.GbWidth {
+    width: 15vw;
+}
+
+.GbBorder {
+    border: 1px solid black;
+}
+
+.FlxDirectionCol {
+    flex-direction: column;
+}
