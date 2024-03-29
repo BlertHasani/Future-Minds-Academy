@@ -1,0 +1,10 @@
+20pt sidebar
+10pt header
+10pt sales
+10pt stats
+20pt listings
+10pt class names
+5pt variables
+15pt presentation
+
+75% kaluse

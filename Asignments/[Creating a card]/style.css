@@ -27,6 +27,16 @@ img {
     height: 40vh;
 }
 
+img {
+    position: relative;
+}
+
+.Credits {
+    position: absolute;
+    top: 100px;
+    color: white;
+}
+
 /* Global */
 .GbFlex {
     display: flex;
