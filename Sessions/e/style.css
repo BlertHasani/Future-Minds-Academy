@@ -1,0 +1,17 @@
+.custom-table {
+    border-collapse: collapse; /* Ensure cells share borders */
+  }
+  
+  .custom-table td {
+    border-bottom: 2px solid black; /* Border bottom on each cell */
+  }
+  
+  .custom-table tr:not(:last-child) td {
+    border-right: 2px solid black; /* Border right on cells except in the last row */
+  }
+  
+
+  
+  .custom-table td:last-child {
+    border-right: none; /* Remove right border from the last cell in each row */
+  }
