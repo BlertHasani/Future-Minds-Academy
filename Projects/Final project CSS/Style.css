@@ -196,6 +196,11 @@ iframe {
     gap: 50px;
 }
 
+.SectionSorter{
+display: flex;
+flex-direction: row;
+
+}
 
 .orange{
     background-color: orange;
