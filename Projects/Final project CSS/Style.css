@@ -7,8 +7,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     height: 100vh;
-    width: 100vw;
     background-color: rgb(243, 237, 237);
+    overflow-x: hidden;
 }
 
 aside {
@@ -110,7 +110,6 @@ header {
     padding: 10px 5px;
     text-align: start;
     z-index: 1;
-
 }
 
 .notifications-list:hover .messages {
@@ -133,16 +132,19 @@ p {
 
 main {
     margin: 100px 50px;
+    padding: 40px;
+    display: grid;
+    gap: 20px;
 }
 
 .FirstSection {
     position: relative;
     border-radius: 8px;
-    padding: 80px 40px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
+    padding: 60px 30px 30px 40px;
+    background-color: white;
+    display: grid;
+    grid-template-columns:auto 1fr;
+    
 }
 
 .mainSectionIcon {
@@ -162,7 +164,9 @@ main {
 .title {
     position: absolute;
     top: 10px;
-    left: 150px;
+    left: 130px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 table {
@@ -184,52 +188,127 @@ td {
     font-size: 20px;
 }
 
-iframe {
-    width: 950px;
-    height: 300px;
-}
-
-.SectionCards{
+.SectionCards {
     display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 50px;
 }
 
-.SectionSorter{
-display: flex;
-flex-direction: row;
-
+.SectionSorter {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
 }
 
-.orange{
+.sectionEnd {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+hr {
+    width: 100%;
+    outline: grey;
+}
+
+.cardSorter {
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
+
+
+
+
+.Listing{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 40px; 
+}
+
+
+.ListingCards{
+    background-color: white;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.ListingImage{
+    width: 95%;
+    border-radius: 7px;
+     margin:0px;
+     transition: 0.5s ease;
+     z-index: 1;
+}
+
+.ListingImage:hover{
+  margin: -30px;
+}
+
+
+.ListingCardsIcon{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.CenterDisplay{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height:260px ;
+}
+
+.CardDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer{
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+}
+
+.FooterCredits{
+    gap: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+/* Global code */
+
+.cursorPointer:hover {
+    cursor: pointer;
+}
+
+.bgBlue {
+    background-color: blue;
+}
+
+.gap10 {
+    gap: 10px;
+}
+
+.orange {
     background-color: orange;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ColorGrey {
+    color: grey;
+}
 
 /* hover code */
 .containers:hover {
@@ -240,14 +319,3 @@ flex-direction: row;
 .GbRed:hover {
     background-color: red;
 }
-
-/* Global code */
-
-.cursorPointer:hover {
-    cursor: pointer;
-}
-
-.bgBlue{
-    background-color: blue;
-}
-
