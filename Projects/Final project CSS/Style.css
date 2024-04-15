@@ -234,7 +234,7 @@ gap: 40px;
 .ListingCards{
     background-color: white;
     border-radius: 7px;
-    padding: 10px;
+    padding: 10px;   
 }
 
 .ListingImage{
@@ -319,3 +319,20 @@ footer{
 .GbRed:hover {
     background-color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
