@@ -92,10 +92,14 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 @media (max-width:1000px) {
     body {
         display: flex;
         flex-direction: column;
+        width: auto;
+        overflow-x: hidden;
     }
 
     .left-side {
@@ -131,6 +135,14 @@ html {
     .interact {
         width: 25%;
     }
+
+    section{
+        border: 10px solid rgba(95, 5, 5, 0.322);
+        padding: 5px;
+        margin: 100px 100px 100px 10px;
+    width: 600px;
+    }
+
 
     footer {
         font-size: 80%;
