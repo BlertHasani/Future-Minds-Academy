@@ -169,7 +169,7 @@ main {
     background-color: var(--white);
     -ms-grid-columns: auto 50px 1fr;
     grid-template-columns: auto 1fr;
-    padding: 60px 10px 10px 10px;
+    padding: 60px 20px 20px 20px;
     gap: 50px;
 }
 
@@ -382,6 +382,10 @@ footer {
 
 .ColorGrey {
     color: grey;
+}
+
+.BgBlue{
+  background-color: blue;
 }
 
 .ColorWhite {
