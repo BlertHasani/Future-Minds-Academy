@@ -429,7 +429,6 @@ footer {
 @media (min-width: 1000px) {
     body {
         width: auto;
-        gap: auto;
     }
 }
 
@@ -441,6 +440,10 @@ footer {
     .Dnone {
         display: block;
     }
+    
+.headerAligner {
+        display: none;
+    }
 
     .DashboardMenu {
         display: -webkit-box;
@@ -450,10 +453,6 @@ footer {
         -ms-flex-pack: justify;
         justify-content: space-between;
         width: 100vw;
-    }
-
-    .headerAligner {
-        display: none;
     }
 
     .FirstSection {
@@ -468,9 +467,10 @@ footer {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+    }
+
+    iframe{
+        height: 35vh;
     }
 
     .Listing {
