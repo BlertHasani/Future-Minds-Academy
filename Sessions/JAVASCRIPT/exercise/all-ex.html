@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 id="title">click me</h1>
+
+<p id="bodyP"></p>
+
+
+<ul>
+    <li>Harry Potter</li>
+    <li>Gu gu pici gu</li>
+    <li>Luli i vocerr</li>
+    <li>Lahuta e Malesise</li>
+</ul>
+
+
+<script>
+
+const title = document.querySelector('#title');
+const bodyP = document.querySelector('#bodyP');
+
+
+
+
+let something = 'Hi there welcome to JS'; 
+
+title.addEventListener('click', function(){
+bodyP.textContent = something;
+
+})
+
+
+
+
+</script>
+
+</body>
+</html>

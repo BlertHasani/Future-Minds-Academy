@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            margin: 20px;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: blue;
+            font-size: 18px;
+        }
+        #imageContainer {
+            margin-top: 20px;
+        }
+        #imageContainer img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#" id="home">Home</a>
+    <a href="#" id="about">About Me</a>
+    <a href="#" id="blog">Blog</a>
+    <a href="#" id="projects">Projects</a>
+    <a href="#" id="contact">Contact</a>
+</div>
+
+<div id="imageContainer"></div>
+
+<script>
+    // Image paths
+    const images = {
+        home: 'images/home.png',
+        about: 'images/about.png',
+        blog: 'images/blog.png',
+        projects: 'images/projects.png',
+        contact: 'images/contact.'
+    };
+
+    // Function to display the image
+    function displayImage(imagePath) {
+        const imageContainer = document.getElementById('imageContainer');
+        imageContainer.innerHTML = `<img src="${imagePath}" alt="Image">`;
+    }
+
+    // Add event listeners to the links
+    document.getElementById('home').addEventListener('click', function() {
+        displayImage(images.home);
+    });
+    document.getElementById('about').addEventListener('click', function() {
+        displayImage(images.about);
+    });
+    document.getElementById('blog').addEventListener('click', function() {
+        displayImage(images.blog);
+    });
+    document.getElementById('projects').addEventListener('click', function() {
+        displayImage(images.projects);
+    });
+    document.getElementById('contact').addEventListener('click', function() {
+        displayImage(images.contact);
+    });
+</script>
+
+</body>
+</html>
