@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LARGEST OF 3 NUMBERS</title>
+</head>
+<body>
+    <script>
+        function main() {
+            let x = parseInt(prompt("Enter the number x:"));
+            let y = parseInt(prompt("Enter the number y:"));
+            let z = parseInt(prompt("Enter the number z:"));
+
+            if (isNaN(x) || isNaN(y) || isNaN(z)) {
+                console.log("There was an error in your input. Please enter valid numbers.");
+                return;
+            }
+
+            let largest;
+
+            if (x >= y && x >= z) {
+                largest = x;
+            } else if (y >= x && y >= z) {
+                largest = y;
+            } else {
+                largest = z;
+            }
+
+            console.log(`The largest number between the 3 numbers is ${largest}.`);
+        }
+
+        window.onload = main;
+    </script>
+</body>
+</html>
