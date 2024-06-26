@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+
+        let kilometers = parseFloat(prompt('Enter the number of kilometers'));
+        let miles = kilometers / 1.6; // the formula for conversion says that after the 1.6 theres way more numbers but i rounded up for an easier calculation.
+
+        alert(kilometers + ' kilometers is approximately ' + miles.toFixed(2) + ' miles');
+
+        let radius = parseFloat(prompt('Enter the radius of the circle'));
+        let area = Math.PI * Math.pow(radius, 2);
+
+        alert('The area of the circle with radius ' + radius + ' is ' + area.toFixed(2));
+
+        let euros = parseFloat(prompt('Enter the amount in euros'));
+        let conversionRate = 0.93; // 1 euro amounts to 0.93 dollars according to my google search.
+        let dollars = euros * conversionRate;
+
+        alert(euros + ' euros is approximately ' + dollars.toFixed(2) + ' dollars');
+    </script>
+
+
+</body>
+</html>
