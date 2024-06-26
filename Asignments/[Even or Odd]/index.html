@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        function main() {
+            let input = prompt("Please enter a number:");
+            let number = parseInt(input);
+
+            if (isNaN(number)) {
+                console.log("There was an error in your input");
+            } else {
+                if (number % 2 === 0) {
+                    console.log(`${number} is an even number.`);
+                } else {
+                    console.log(`${number} is an odd number.`);
+                }
+            }
+        }
+
+        window.onload = main;
+    </script>
+</body>
+</html>
