@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+   function getGrade(points) {
+            if (points >= 0 && points <= 19) {
+                return 1;
+            } else if (points >= 20 && points <= 39) {
+                return 2;
+            } else if (points >= 40 && points <= 59) {
+                return 3;
+            } else if (points >= 60 && points <= 79) {
+                return 4;
+            } else if (points >= 80 && points <= 100) {
+                return 5;
+            } else {
+                return "There was an error in your input";
+            }
+        }
+        function main() {
+            let input = prompt("Please enter your test score (0-100):");
+
+            let points = parseInt(input);
+
+            let grade = getGrade(points);
+
+                alert(`You scored ${points} points, which gives you a grade of ${grade}.`);
+           
+        }
+
+
+        window.onload = main;
+    </script>
+    
+</body>
+</html>
