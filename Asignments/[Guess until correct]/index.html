@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Guess until correct]</title>
+</head>
+
+<body>
+    <script>
+
+        const correctNumber = Math.floor(Math.random() * 6) + 1;
+        let tries = 0;
+        let guess;
+
+        do {
+            guess = parseInt(prompt("Guess a number between 1 and 6:"));
+            tries++;
+
+            if (guess == correctNumber) {
+                if (tries == 1) {
+                    alert(`Congratulations, you guessed the correct number in ${tries} try!`);
+                } else {
+                    alert(`Congratulations, you guessed the correct number in ${tries} tries!`);
+                }
+            } else {
+                alert("Incorrect guess. Please try again.");
+            }
+
+        } while (guess != correctNumber);
+
+    </script>
+</body>
+
+</html>
