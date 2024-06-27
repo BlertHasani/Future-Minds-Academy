@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number;
+
+        do {
+            number = parseInt(prompt("Enter a positive number between 1 and 100:"));
+            if (isNaN(number) || number < 1 || number > 100) {
+                alert("Please enter a positive number BETWEEN 1 and 100.");
+            }
+        } while (isNaN(number) || number < 1 || number > 100);
+
+        console.log("Numbers from 1 to " + number + ":");
+        for (let i = 1; i <= number; i++) {
+            console.log(i);
+        }
+
+        let numbersString = "";
+        for (let i = 1; i <= number; i++) {
+            numbersString += i + " ";
+        }
+        console.log(numbersString.trim());
+
+        let commaSeparatedNumbers = "";
+        for (let i = 1; i <= number; i++) {
+            commaSeparatedNumbers += i;
+            if (i < number) {
+                commaSeparatedNumbers += ", ";
+            }
+        }
+        console.log(commaSeparatedNumbers);
+    </script>
+</body>
+</html>
