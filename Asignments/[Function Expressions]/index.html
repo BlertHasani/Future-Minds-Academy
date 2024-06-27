@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Function Expressions]</title>
+</head>
+<body>
+    <script>
+        const printHelloWorldTenTimes = function() {
+            for (let i = 0; i < 10; i++) {
+                console.log("Hello World");
+            }
+        };
+        
+        const printString = (str) => {
+            console.log(str);
+        };
+        
+        const convertKilometersToMiles = (km) => {
+            const miles = km * 0.6;
+            return miles;
+        };
+        
+        const calculateCircleArea = (radius) => {
+            const area = Math.PI * radius * radius;
+            return area;
+        };
+        
+       
+        const generateWelcomeMessage = (name, surname) => {
+            return `Welcome, ${name} ${surname}`;
+        };
+        
+        const isWorkingCitizen = (age) => {
+            return age >= 18 && age < 65;
+        };
+        
+        const isEven = (number) => {
+            return number % 2 == 0;
+        };
+        
+        console.log("Calling printHelloWorldTenTimes():");
+        printHelloWorldTenTimes();
+        console.log();
+        
+        console.log("Calling printString('Hello from a function'):");
+        printString("Hello from a function");
+        console.log();
+        
+        console.log("Calling convertKilometersToMiles(10):");
+        let miles = convertKilometersToMiles(10);
+        console.log(`10 kilometers is approximately ${miles} miles`);
+        console.log();
+        
+        console.log("Calling calculateCircleArea(5):");
+        let area = calculateCircleArea(5);
+        console.log(`The area of the circle with radius 5 is ${area} square units`);
+        console.log();
+        
+        
+        console.log("Calling generateWelcomeMessage('Blert', 'Hasani'):");
+        let welcomeMessage = generateWelcomeMessage('Blert', 'Hasani');
+        console.log(welcomeMessage);
+        console.log();
+        
+        
+        console.log("Calling isWorkingCitizen(25):");
+        let age = 25;
+        let workingCitizen = isWorkingCitizen(age);
+        console.log(`Is the person aged ${age} a working citizen? ${workingCitizen}`);
+        console.log();
+        
+    
+        console.log("Calling isEven(14):");
+        let number = 15;
+        let even = isEven(number);
+        console.log(`Is ${number} an even number? ${even}`);
+        console.log();</script>
+</body>
+</html>
