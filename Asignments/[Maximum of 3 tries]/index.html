@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Maximum of 3 tries]</title>
+</head>
+
+<body>
+    <script>
+        const correctPassword = '12341234';
+        let attempts = 3;
+        let guess;
+
+        do {
+            guess = prompt(`Enter the password. ${attempts} tries left:`);
+            attempts--;
+
+            if (guess == correctPassword) {
+                alert("Welcome! Correct password.");
+                break;
+            }
+            else if (attempts > 0) {
+                alert(`Incorrect password. ${attempts} tries left.`);
+            }
+            else {
+                alert("You have no more tries left. Access denied.");
+            }
+
+        } while (attempts >= 0);
+    </script>
+</body>
+
+</html>
