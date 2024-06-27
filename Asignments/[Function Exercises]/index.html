@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Function Exercises]</title>
+</head>
+
+<body>
+
+
+<script>
+   
+    function printHelloWorldTenTimes() {
+        for (let i = 0; i < 10; i++) {
+            console.log("Hello World");
+        }
+    }
+    
+ 
+    function printString() {
+        let str = prompt("Enter a string to print:");
+        console.log(str);
+    }
+    
+
+    function convertKilometersToMiles() {
+        let km = parseFloat(prompt("Enter kilometers to convert to miles:"));
+        if (isNaN(km)) {
+            throw new Error("Invalid input. Please enter a valid number.");
+        }
+        const miles = km * 0.6; 
+        return miles;
+    }
+    
+    function calculateCircleArea() {
+        let radius = parseFloat(prompt("Enter the radius of the circle:"));
+        if (isNaN(radius) || radius <= 0) {
+            throw new Error("Invalid input. Please enter a valid positive number.");
+        }
+        const area = Math.PI * radius * radius;
+        return area;
+    }
+    
+    function generateWelcomeMessage() {
+        let name = prompt("Enter your name:");
+        let surname = prompt("Enter your surname:");
+        return `Welcome, ${name} ${surname}`;
+    }
+    
+    function isWorkingCitizen() {
+        let age = parseInt(prompt("Enter your age:"));
+        if (isNaN(age) || age < 0) {
+            throw new Error("Invalid input. Please enter a valid age.");
+        }
+        return age >= 18 && age < 65;
+    }
+    
+    function isEven() {
+        let number = parseInt(prompt("Enter a positive integer to check if it's even:"));
+        if (isNaN(number) || number <= 0) {
+            throw new Error("Invalid input. Please enter a valid positive integer.");
+        }
+        return number % 2 === 0;
+    }
+    
+    try {
+        console.log("Printing 'Hello World' ten times:");
+        printHelloWorldTenTimes();
+        console.log();
+    
+        console.log("Printing a string entered by the user:");
+        printString();
+        console.log();
+    
+        console.log("Converting kilometers to miles:");
+        let miles = convertKilometersToMiles();
+        console.log(`Miles: ${miles}`);
+        console.log();
+    
+        console.log("Calculating the area of a circle:");
+        let area = calculateCircleArea();
+        console.log(`Area of the circle: ${area.toFixed(2)}`); 
+        console.log();
+    
+        console.log("Generating a welcome message:");
+        let message = generateWelcomeMessage();
+        console.log(message);
+        console.log();
+    
+        console.log("Checking if the user is a working citizen:");
+        let working = isWorkingCitizen();
+        console.log(`Is the user a working citizen? ${working}`);
+        console.log();
+    
+        console.log("Checking if a number is even:");
+        let even = isEven();
+        console.log(`Is the number even? ${even}`);
+        console.log();
+    } catch (error) {
+        console.error(error.message);
+    }
+
+
+
+
+    </script>
+</body>
+
+</html>
