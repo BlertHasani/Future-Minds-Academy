@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Fibonacci Sequence]</title>
+</head>
+<body>
+    <script>
+        let numTerms = parseInt(prompt("Enter the number of Fibonacci sequence terms to generate:"));
+
+       
+        if (isNaN(numTerms) || numTerms <= 0) {
+            alert("Please enter a valid positive number.");
+        } else {
+            
+            let a = 1; 
+            let b = 1; 
+          
+            console.log(a);
+            if (numTerms > 1) {
+                console.log(b);
+            }
+          
+            for (let i = 3; i <= numTerms; i++) {
+                let next = a + b;
+                console.log(next);
+                a = b; 
+                b = next; 
+            }
+        }
+    </script>
+</body>
+</html>
