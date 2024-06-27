@@ -1,82 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertical Progress Bar</title>
+    <title>Number Guessing Game</title>
     <style>
         body {
             display: flex;
+        
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
         }
 
-        .progress-bar-container {
+        .result-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            background-color: black;
+            color: white;
         }
 
-        .progress-bar-wrapper {
-            width: 30px;
-            height: 300px;
-            background-color: #e0e0e0;
-            position: relative;
+        .result {
+            padding: 20px;
+            border: 1px solid #ccc;
+            width: 150px;
+            text-align: center;
+            margin: 10px;
         }
 
-        .progress-bar {
-            width: 100%;
-            height: 0;
-            background-color: green;
-            position: absolute;
-            bottom: 0;
-            transition: height 0.3s ease, background-color 0.3s ease;
+        .correct-answer {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
-        .indicator {
-            margin: 10px 0;
+        .player-one {
+            background-color: lightblue;
+        }
+
+        .player-two {
+            background-color: lightgreen;
+        }
+
+        .tie {
+            background-color: orange;
+        }
+
+        .dFlex{
+            display: flex;
         }
     </style>
 </head>
-
 <body>
-    <div class="progress-bar-container">
-        <span class="indicator">0%</span>
-        <div class="progress-bar-wrapper">
-            <div id="bar" class="progress-bar"></div>
+
+        
+        <div class="result-container">
+            <div class="correct-answer">The correct answer is: <span id="correctAnswer"></span></div>
+            <div class="dFlex">
+            <div id="playerOneResult" class="result player-one">Player One: <span id="playerOneGuess"></span></div>
+            <div id="playerTwoResult" class="result player-two">Player Two: <span id="playerTwoGuess"></span></div>
         </div>
-        <span class="indicator">100%</span>
-    </div>
+        </div>
+    
+
     <script>
-        // Progress Bar Script
-        let percentage = parseInt(prompt('What is the progress?'));
-        if (isNaN(percentage) || percentage < 0 || percentage > 100) throw new Error('Write a valid percentage!');
-
-        let color;
-        if (percentage <= 20) {
-            color = 'darkred';
-        } else if (percentage <= 50) {
-            color = 'orange';
-        } else if (percentage <= 80) {
-            color = 'yellow';
-        } else {
-            color = 'green';
-        }
-
-        let progressBar = document.getElementById('bar');
-        progressBar.style.backgroundColor = color;
-        progressBar.style.height = `${percentage}%`;
-
-        // Game Script
         let answer = Math.floor(Math.random() * 20) + 1;
         let playerOne = parseInt(prompt('Player One:'));
         let playerTwo = parseInt(prompt('Player Two:'));
 
-        if (isNaN(playerOne) || isNaN(playerTwo)) throw new Error('Please write only numbers!');
+        if (isNaN(playerOne) || isNaN(playerTwo)) {
+            throw new Error('Please write only numbers!');
+        }
+
         if ((playerOne < 0 || playerOne > 20) || (playerTwo < 0 || playerTwo > 20)) {
             throw new Error('Only select numbers between 0-20');
         }
@@ -87,13 +89,21 @@
 
         if (playerOneDistance < playerTwoDistance) {
             winner = 'Player One';
-        } else {
+            document.getElementById('playerOneResult').style.backgroundColor = 'green';
+            document.getElementById('playerTwoResult').style.backgroundColor = 'red';
+        } else if (playerTwoDistance < playerOneDistance) {
             winner = 'Player Two';
+            document.getElementById('playerOneResult').style.backgroundColor = 'red';
+            document.getElementById('playerTwoResult').style.backgroundColor = 'green';
+        } else {
+            winner = 'Tie';
+            document.getElementById('playerOneResult').style.backgroundColor = 'orange';
+            document.getElementById('playerTwoResult').style.backgroundColor = 'orange';
         }
 
-        console.log(`The correct answer is ${answer}`);
-        console.log(`The winner is ${winner}`);
+        document.getElementById('correctAnswer').innerHTML = answer;
+        document.getElementById('playerOneGuess').innerHTML = playerOne;
+        document.getElementById('playerTwoGuess').innerHTML = playerTwo;
     </script>
 </body>
-
 </html>
