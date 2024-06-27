@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Progress Bar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .progress-bar-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .progress-bar-wrapper {
+            width: 30px;
+            height: 300px;
+            background-color: #e0e0e0;
+            position: relative;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 0;
+            background-color: green;
+            position: absolute;
+            bottom: 0;
+            transition: height 0.3s ease, background-color 0.3s ease;
+        }
+
+        .indicator {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-bar-container">
+        <span class="indicator">0%</span>
+        <div class="progress-bar-wrapper">
+            <div id="bar" class="progress-bar"></div>
+        </div>
+        <span class="indicator">100%</span>
+    </div>
+    <script>
+        // Progress Bar Script
+        let percentage = parseInt(prompt('What is the progress?'));
+        if (isNaN(percentage) || percentage < 0 || percentage > 100) throw new Error('Write a valid percentage!');
+
+        let color;
+        if (percentage <= 20) {
+            color = 'darkred';
+        } else if (percentage <= 50) {
+            color = 'orange';
+        } else if (percentage <= 80) {
+            color = 'yellow';
+        } else {
+            color = 'green';
+        }
+
+        let progressBar = document.getElementById('bar');
+        progressBar.style.backgroundColor = color;
+        progressBar.style.height = `${percentage}%`;
+
+        // Game Script
+        let answer = Math.floor(Math.random() * 20) + 1;
+        let playerOne = parseInt(prompt('Player One:'));
+        let playerTwo = parseInt(prompt('Player Two:'));
+
+        if (isNaN(playerOne) || isNaN(playerTwo)) throw new Error('Please write only numbers!');
+        if ((playerOne < 0 || playerOne > 20) || (playerTwo < 0 || playerTwo > 20)) {
+            throw new Error('Only select numbers between 0-20');
+        }
+
+        let playerOneDistance = Math.abs(answer - playerOne);
+        let playerTwoDistance = Math.abs(answer - playerTwo);
+        let winner;
+
+        if (playerOneDistance < playerTwoDistance) {
+            winner = 'Player One';
+        } else {
+            winner = 'Player Two';
+        }
+
+        console.log(`The correct answer is ${answer}`);
+        console.log(`The winner is ${winner}`);
+    </script>
+</body>
+
+</html>
